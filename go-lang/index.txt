@@ -1,0 +1,22 @@
+Questions:
+1. why init? Just put in first lines of main
+2. multiple or dynamic GO_PATH, dont want to share dependencies
+
+Notes:
+3. package management, different version for different projects (glide)
+  - vendor file  (vendoring)
+5. typically use make files for "npm scripts"
+6. uppercase and lowercase matter when defining struct types
+  - lowercase are not accessible outside of the package the type is defined in
+
+7. parameters are always passed by value (copied), so if you want to mutate the parameter (e.g. a struct)
+then you need to pass by reference.
+
+creating instance:
+
+accountOne := a.Account{
+
+  }
+}
+
+pluralsight, codeschool 

@@ -1,0 +1,4 @@
+chrome debugging tools
+1. blackboxing scripts to keep them out of the stack traces
+2. event listeners tab for inspecting events
+3. memory profiling - record to see if a memory leak is occuring

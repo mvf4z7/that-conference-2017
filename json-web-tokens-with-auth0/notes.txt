@@ -1,0 +1,3 @@
+JWT vs JWE
+- JWT payload is only base64 url encoded (not encrypted)
+- JWT itself/or payload (not sure which) is encrypted

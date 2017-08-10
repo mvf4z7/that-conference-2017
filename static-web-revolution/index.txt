@@ -1,0 +1,8 @@
+bit.ly/static-web-revolution
+
+staticgen.com => open source static site generators
+
+Authoring tools for non developers
+- if you don't want to use markdown
+- headless CMS === use WordPress API to get content
+Contentful, Netlify CMS, 

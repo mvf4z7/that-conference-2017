@@ -1,0 +1,4 @@
+image vs container:
+container creates an image, after that point the image can be modified (e.g. logs 
+written to the docker fileystems).
+

@@ -1,0 +1,68 @@
+- containers are OS virtualization, not hardware virtualization (VM)
+
+Container vs image
+- Container === running instance of an image
+- image is immutable
+
+
+Registries, - where images are store
+- DockerHub - where images are shared
+- can run image for own private registries
+
+Development environment setup
+- load apache, redis, mysql containers and connect to them from app locally
+
+DockerEngine
+- docker workflow / cli
+
+DockerOSX
+- loads up a Linux VM because docker needs to talk to Linux
+
+
+Basic commands
+$ docker run ubuntu uname -a
+- runs a docker container
+- creates new container on hard drive each time, docker ps wont show anything running
+but the containers 
+
+$ docker ps --all
+- whill show them
+
+$ docker rm b503
+
+$ docker run --rm -i -t ubuntu bin/bash
+--rm will delete when exited
+-i  interactive session
+
+
+$docker run -i -t --name bash ubuntu bin/bash
+--name => names the container
+
+$ docker exec bash ls 
+executes ls in the container with the name bash
+
+
+docker build 
+-- point to a local dockerfile and will build the image
+-- then you need run the image to create a container
+
+!!!container will exit if no process is running inthe foreground
+
+mapping ports
+8000:80   means map 8000 of host machine to 80 in container
+
+
+redis
+-v $PWD/data: /data
+Volume command maps /data on the container to /data on local host machine
+
+node redis example
+Add package.json /tmp/package.json  # takes package.json from local machine to container 
+RUN cd /tmp && npm install   # runs this command in container
+
+Docker machine
+- changes which machine RUN command is running on, by default RUN runs on 
+
+Slides:
+bphogan.com/presentations/docker2017
+
